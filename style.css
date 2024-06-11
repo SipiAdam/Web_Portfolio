@@ -1,89 +1,178 @@
+/* Alap stílusok */
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4; /* Világosszürke háttér */
+    color: #333; /* Sötétszürke szöveg */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Fejléc stílusok */
+
 header {
-    background: #333;
-    color: #fff;
+    background: #4CAF50; /* Zöld háttér */
+    color: #fff; /* Fehér szöveg */
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Árnyék a fejléchez */
 }
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navigáció stílusok */
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff; /* Fehér szöveg */
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
+
+nav ul li a:hover {
+    color: #f4f4f454; /* Világosszürke szöveg hover */
+}
+
+/* Sub-navigáció stílusok */
+
+.sub-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    background-color: #333; /* Sötétszürke háttér */
+    padding: 10px;
+    border-radius: 8px; /* Lekerekített sarkok */
+}
+
+.sub-nav ul li {
+    margin: 0 15px;
+}
+
+.sub-nav ul li a {
+    color: #fff; /* Fehér szöveg */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sub-nav ul li a:hover {
+    color: #4CAF50; /* Zöld szöveg hover */
+}
+
+/* Main szekció stílusok */
 
 main {
-    padding: 1rem;
-    max-width: 1200px;
+    padding: 2rem 1rem;
+    max-width: 1000px;
     margin: auto;
     flex: 1;
+    background-color: #fff; /* Fehér háttér */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Árnyék a main szekcióhoz */
+    border-radius: 8px; /* Lekerekített sarkok */
 }
 
+main h2 {
+    color: #4CAF50; /* Zöld címsor */
+}
+
+main h3 {
+    color: #4CAF50; /* Zöld alcímsor */
+}
+
+main p {
+    margin: 1rem 0;
+}
+
+/* Képek stílusai */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Lekerekített sarkok a képekhez */
+    margin: 1rem 0;
+    align-content: left;
+}
+
+/* Táblázat stílusok */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: #f9f9f9; /* Világos háttér a táblázatokhoz */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Világosszürke keret */
+    text-align: center; /* Vízszintes középre igazítás */
+    vertical-align: middle; /* Függőleges középre igazítás */
+    padding: 0.75rem; /* Párnázás */
+}
+
+/* Figure és Figcaption stílusok */
+
+figure {
+    margin: 1rem 0;
+    text-align: center; /* Középre igazítás */
+}
+
+figcaption {
+    font-style: italic;
+    color: #666; /* Középszürke szöveg */
+    text-align: left;
+}
+
+/* Lábléc stílusok */
+
 footer {
-    background: #333;
-    color: #fff;
+    background: #333; /* Sötétszürke háttér */
+    color: #fff; /* Fehér szöveg */
     text-align: center;
     padding: 1rem 0;
     position: relative;
     width: 100%;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 0.5rem;
-    text-align: left;
-}
-
-figure {
-    margin: 0;
-}
-
-figcaption {
-    text-align: center;
-    font-style: italic;
-}
+/* Média lekérdezések mobilhoz */
 
 @media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
     nav ul li {
-        display: block;
-        margin: 0.5rem 0;
+        margin: 10px 0;
+    }
+
+    .sub-nav ul {
+        flex-direction: column;
+    }
+
+    .sub-nav ul li {
+        margin: 10px 0;
     }
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
+
+
+

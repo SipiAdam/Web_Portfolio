@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólió - Sipos Ádám - Logika</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Sipos Ádám Portfólió</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Főoldal</a></li>
+                <li><a href="logika.html">Logika</a></li>
+                <li><a href="../Word/word.html">Word</a></li>
+                <li><a href="../Karesz/karesz.html">Karesz</a></li>
+                <li><a href="../Csharp/csharp.html">C#</a></li>
+                <li><a href="../Web/web.html">Web</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="sub-nav">
+            <ul>
+                <li><a href="logika.html">Logika</a></li>
+                <li><a href="./logikaalapok.html">Igazságtáblázatok</a></li>
+                <li><a href="./analitikus_fak.html">Analitikus Fák</a></li>
+                <li><a href="./szamrendszerek.html">Számrendszerek</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Igazságtáblázatok</h2>
+            <p>Itt az igazságtáblázatokról lesz szó. Ez volt az elős nagyobb téma amibe belekeztünk.Az igazság táblázatok a logikában használt eszközök, amelyek a logikai kifejezések különböző lehetséges értékeit és azok kombinációit ábrázolják. Minden lehetséges bemeneti érték (általában igaz (1) vagy hamis (0)) mellett megmutatják a kifejezés kimeneti értékét.</p>
+            <h3>Főbb fogalmak</h3>            
+            <ul>
+                <li><b>Változók:</b> A logikai kifejezések alapegységei (pl. 𝐴A, 𝐵B).</li>
+                <li><b>Logikai műveletek:</b> Olyan műveletek, mint az ÉS (AND, ∧∧), VAGY (OR, ∨∨), és a NEM (NOT, ¬¬), amelyekkel a változók kombinálhatók.</li>
+                <li><b>Kimeneti érték:</b> Az igazság táblázat minden sorában megmutatja a kifejezés eredményét az adott bemeneti értékekre.</li>
+            </ul>
+            <h3>Táblázat</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A V B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <figcaption>Egy alap igazságtáblázat.</figcaption>
+            <figure>
+                <img src="./Igazszágtáblák1.png" alt="Igazszágtáblák1">
+                <figcaption>Egy nehezebb igazságtáblázat.</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sipos Ádám</p>
+    </footer>
+</body>
+</html>
