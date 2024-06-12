@@ -173,6 +173,26 @@ footer {
     }
 }
 
+.styled-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
 
+.styled-link:hover {
+    color: #fff;
+    background-color: #4CAF50;
+}
+
+nav ul li a.current1 {
+    color:#f4f4f454
+}
+
+.sub-nav ul li a.current2 {
+    color: #4CAF50; /* Zöld szöveg hover */
+}
 
 
