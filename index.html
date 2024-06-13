@@ -4,15 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólió - Sipos Ádám - Főoldal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            text-align: center;
+            display: none;
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<div class="popup" id="popup">
+    <h2>Üdvözöllek a portfóliómban!</h2>
+    <p>Köszönöm, hogy ellátogattál ide!</p>
+    <button onclick="closePopup()">Bezárás</button>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'block';
+    });
+
+    function closePopup() {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'none';
+    }
+</script>
 <body>
     <header>
         <h1>Sipos Ádám Portfólió</h1>
         <nav>
             <ul>
-                <li><a href="index.html"class="current1">Főoldal</a></li>
+                <li><a href="index.html" class="current1">Főoldal</a></li>
                 <li><a href="./Word/word.html">Word</a></li>
                 <li><a href="Logika/logika.html">Logika</a></li>
                 <li><a href="./Karesz/karesz.html">Karesz</a></li>
@@ -24,7 +59,7 @@
     <main>
         <article>
             <h2>Bemutatkozás</h2>
-            <p>Üdvözöllek a portfóliómban! Sipos Ádám vagyok, és ezzen a weboldalon az éves munkáimat fogom összegezni. Jó sok mindent tanultunk ebben az 1 évben szóval megpróbáltam röviden tömören összeszedni ez idei évben tanultakat. Remélem teszeni fog az oldal.</p>
+            <p>Üdvözöllek a portfóliómban! Sipos Ádám vagyok, és ezen a weboldalon az éves munkáimat fogom összegyűjteni. Sok mindent tanultam az elmúlt évben, és ezen az oldalon próbáltam röviden összefoglalni a tanultakat. Remélem, tetszeni fog az oldal.</p>
         </article>
     </main>
     <footer>
