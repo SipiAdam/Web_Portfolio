@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólió - Sipos Ádám - C# - Kiválogatás</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Sipos Ádám Portfólió</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Főoldal</a></li>
+                <li><a href="../Word/word.html">Word</a></li>
+                <li><a href="../Logika/logika.html">Logika</a></li>
+                <li><a href="../Karesz/karesz.html">Karesz</a></li>
+                <li><a href="../Csharp/csharp.html"class="current1">C#</a></li>
+                <li><a href="../Web/web.html">Web</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>  
+            <nav class="sub-nav">
+                <ul>
+                    <li><a href="csharp.html">C#</a></li>
+                    <li><a href="osszegzes.html">Összegzés</a></li>
+                    <li><a href="kereses.html">Keresés</a></li>
+                    <li><a href="kivalogatas.html"class="current2">Kiválogatás</a></li>
+                    <li><a href="megszamolas.html">Megszámolás</a></li>
+                </ul>
+            </nav>
+            <h2>Programozási tételek - Kiválogatás</h2>
+            <p>A kiválogatásban egy feltételnek megfelelő elemeket válogatunk ki a bemenetünkből egy tömbe vagy listába. Ezt nagyon sokat használtuk a 3000-es feladatoknál. Sok elemet kellett kiválogatni. De ezt dictionaryknál is használjuk.</p>
+            <pre><code class="code-block">
+                <span class="keyword">static</span> <span class="class-name">List</span>&lt;<span class="keyword">int</span>&gt; <span class="function-name">Tizenöt</span>(<span class="class-name">List</span>&lt;<span class="keyword">int</span>&gt; <span class="property">lista</span>)
+                {
+                    <span class="class-name">List</span>&lt;<span class="keyword">int</span>&gt; <span class="property">result</span> = <span class="keyword">new</span> <span class="class-name">List</span>&lt;<span class="keyword">int</span>&gt;();
+                    <span class="cycle">for</span> (<span class="keyword">int</span> <span class="property">i</span> = <span class="number">0</span>; <span class="property">i</span> &lt; <span class="property">lista</span>.<span class="property">Count</span>; <span class="property">i</span>++)
+                    {
+                        <span class="cycle">if</span> (<span class="property">lista</span>[<span class="property">i</span>] % <span class="number">15</span> == <span class="number">0</span>)
+                        {
+                            <span class="property">result</span>.<span class="function-name">Add</span>(<span class="property">lista</span>[<span class="property">i</span>]);
+                        }
+                    }
+                    <span class="cycle">return</span> <span class="property">result</span>;
+                }
+            </code></pre>
+            <figcaption>Ebben a kódban kiválogatjuk egy listából a 15-el osztható elemeket.</figcaption>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sipos Ádám</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólió - Sipos Ádám - C# - Megszámolás</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Sipos Ádám Portfólió</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Főoldal</a></li>
+                <li><a href="../Word/word.html">Word</a></li>
+                <li><a href="../Logika/logika.html">Logika</a></li>
+                <li><a href="../Karesz/karesz.html">Karesz</a></li>
+                <li><a href="../Csharp/csharp.html"class="current1">C#</a></li>
+                <li><a href="../Web/web.html">Web</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>           
+            <nav class="sub-nav">
+                <ul>
+                    <li><a href="csharp.html">C#</a></li>
+                    <li><a href="osszegzes.html">Összegzés</a></li>
+                    <li><a href="kereses.html">Keresés</a></li>
+                    <li><a href="kivalogatas.html">Kiválogatás</a></li>
+                    <li><a href="megszamolas.html"class="current2">Megszámolás</a></li>
+                </ul>
+            </nav>
+            <h2>Programozási tételek - Megszámolás</h2>
+            <p>A megszámolásban egy adott feltétel alapján megszámoljuk a bemenet elemeit. És utána ezt a számot adjuk vissza. Ezt a 3000-es feladatokba sokat használtuk.</p>
+            <pre><code class="code-block">
+                <span class="keyword">static int</span> <span class="function-name">Hány_páros_van</span>(<span class="class-name">List</span>&lt;<span class="keyword">int</span>&gt; <span class="property">lista</span>)
+                {
+                    <span class="keyword">int</span> <span class="property">páros</span> = <span class="number">0</span>;
+                    <span class="cycle">for</span> (<span class="keyword">int</span> <span class="property">i</span> = <span class="number">0</span>; <span class="property">i</span> &lt; <span class="property">lista</span>.Count; <span class="property">i</span>++)
+                    {
+                        <span class="cycle">if</span> (<span class="property">lista</span>[<span class="property">i</span>] % <span class="number">2</span> == <span class="number">0</span>)
+                        {
+                            <span class="property">páros</span>++;
+                        }
+                    }
+            
+                    <span class="cycle">return</span> <span class="property">páros</span>;
+                }
+            </code></pre>
+            <figcaption>Ez a kód megszámolja a páros elemeit egy listának.</figcaption>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sipos Ádám</p>
+    </footer>
+</body>
+</html>

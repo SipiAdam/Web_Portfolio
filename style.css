@@ -35,14 +35,6 @@ nav ul li {
     margin: 0 15px;
 }
 
-video{
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 1rem 0;
-    align-content: left;
-}
-
 nav ul li a {
     color: #fff; 
     text-decoration: none;
@@ -76,7 +68,7 @@ nav ul li a:hover {
 }
 
 .sub-nav ul li a:hover {
-    color: #4CAF50; 
+    color: f4f4f454; 
 }
 
 main {
@@ -101,12 +93,11 @@ main p {
     margin: 1rem 0;
 }
 
-img {
+img, video {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin: 1rem 0;
-    align-content: left;
 }
 
 table {
@@ -159,6 +150,19 @@ footer {
     .sub-nav ul li {
         margin: 10px 0;
     }
+
+    main {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    table, th, td {
+        font-size: 0.875rem;
+    }
 }
 
 .styled-link {
@@ -175,12 +179,61 @@ footer {
     background-color: #4CAF50;
 }
 
-nav ul li a.current1 {
-    color:#f4f4f454
-}
-
+nav ul li a.current1,
 .sub-nav ul li a.current2 {
-    color: #4CAF50;
+    color: #f4f4f454;
 }
 
+pre {
+    background: #1e1e1e;
+    color: #dcdcdc;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
 
+.code-block {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 1rem;
+    border-radius: 8px;
+    display: block;
+    overflow-x: auto;
+}
+
+.code-block .keyword {
+    color: #569cd6;
+}
+
+.code-block .string {
+    color: #d69d85;
+}
+
+.code-block .number {
+    color: #b5cea8;
+}
+
+.code-block .comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.code-block .class-name {
+    color: #4ec9b0;
+}
+
+.code-block .function-name {
+    color: #dcdcaa;
+}
+
+.code-block .property {
+    color: #9cdcfe;
+}
+    
+.code-block .cycle {
+    color: #c586c0;
+}
+    

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólió - Sipos Ádám - C# - Összegzés</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Sipos Ádám Portfólió</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Főoldal</a></li>
+                <li><a href="../Word/word.html">Word</a></li>
+                <li><a href="../Logika/logika.html">Logika</a></li>
+                <li><a href="../Karesz/karesz.html">Karesz</a></li>
+                <li><a href="../Csharp/csharp.html"class="current1">C#</a></li>
+                <li><a href="../Web/web.html">Web</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>          
+            <nav class="sub-nav">
+                <ul>
+                    <li><a href="csharp.html">C#</a></li>
+                    <li><a href="osszegzes.html"class="current2">Összegzés</a></li>
+                    <li><a href="kereses.html">Keresés</a></li>
+                    <li><a href="kivalogatas.html">Kiválogatás</a></li>
+                    <li><a href="megszamolas.html">Megszámolás</a></li>
+                </ul>
+            </nav>
+            <h2>Programozási tételek - Összegzés</h2>
+            <p>Az összegzésnél végig megyük a bemenetünkön és összegzünk bizonyos elemeket vagy akár az egész bemenetet.</p>
+            <pre><code class="code-block">
+                <span class="keyword">static int</span> <span class="function-name">Összegzés</span>(<span class="keyword">int</span>[] <span class="property">t</span>)
+                {
+                    <span class="keyword">int</span> <span class="property">result</span> = <span class="number">0</span>;
+                    <span class="cycle">for</span> (<span class="keyword">int</span> <span class="property">i</span> = <span class="number">0</span>; <span class="property">i</span> &lt; <span class="property">t</span>.<span class="property">Length</span>; <span class="property">i</span>++)
+                    {
+                        <span class="property">result</span> += <span class="property">t</span>[<span class="property">i</span>];
+                    }
+                    <span class="cycle">return</span> <span class="property">result</span>;
+                }
+            </code></pre>
+            <figcaption>Ebben a kódban végigmegyünk az egész tömbön és összegezzük.</figcaption>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sipos Ádám</p>
+    </footer>
+</body>
+</html>
