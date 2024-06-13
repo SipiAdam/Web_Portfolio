@@ -35,6 +35,14 @@ nav ul li {
     margin: 0 15px;
 }
 
+video{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    align-content: left;
+}
+
 nav ul li a {
     color: #fff; 
     text-decoration: none;
